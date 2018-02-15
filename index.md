@@ -4,7 +4,7 @@
 Vo štvrtok 1. marca 2018 v čase od 14:30 do 17:00 sa uskutoční v BB kurz pre učiteľov informatiky. Viac info [na tomto linku](http://micropython.sk/microbit/microbit-bb.pdf).
 
 ## Čo je to micro:bit?
-Malá edukačná doska vhoná pre využitie vrámci hodín informatiky na základných a stredných školách. Je možn programovať ju v MicroPythone, C, JavaScripte a cez Blockly (podobné Scratch).
+Malá edukačná doska vhodná pre využitie vrámci hodín informatiky na základných a stredných školách. Je možné programovať ju v MicroPythone, C, JavaScripte a cez Blockly (podobné Scratch).
 
 ## Prečo je tak populárny?
 V roku 2016 vo Veľkej Británií vláda rozdala každému siedmakovi na základných školách (približne 11 rokov) vývojovú dosku BBC micro:bit (takmer 1 milión kusov). Za prvý polrok projektu sa 85% učiteľov vyjadrilo, že hardvér na hodinách informatiky spravil výučbu pre žiakov zaujímavejšou a až 90% žiakov sa po projekte vyjadrilo, že naučiť sa programovať je možné úplne pre každého (nie len pre žiakov s informatickým zameraním). U dievčat bol pozorovaný 70% nárast záujmu o informatiku. Približne polovica učiteľov uviedla, že sa po projekte cítili viac sebavedomí v programovaní, a to predovšetkým tí učitelia, ktorí nemali veľa predchádzajúcich skúseností s programovaním.
@@ -17,6 +17,8 @@ Na workshope začneme jednoduchšími úlohami, ktoré využívajú len vbudovan
 Workshop je bezplatný a vieme Vám na mieste zapožičať počítač.
 Pre účasť na workshope je potrebná [registrácia na tomto odkaze](http://bit.ly/microbit-bb)
 
+## UČíme s Hardvérom
+Projekt Učíme s Hardvérom je iniciatívou občianskeho združenia SPy, ktorého cieľom je priniesť zaujímavejšie hodiny informatiky do škôl. Viac info [nájdete na tomto odkaze](http://bit.ly/ucime-s-hardverom)
 
-## PyConSK
+## SPy o.z. a PyConSK
 Projekt je zastrešený občianskym združením SPy, ktoré organizuje každoročnú medzinárodnú konferenciu PyCon SK a pravidelné mesačné meetupy v Bratislave. Súčasťou  konferencie je aj sekcia pre učiteľov, EduTrack, so zameraním na vyučovanie programovania v jazyku Python, oboznámenie učiteľov s novými trendmi a možnosťami v oblasti programovania.
