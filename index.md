@@ -1,7 +1,7 @@
 # Micro:bit
 
 ## Workshop Banská Bystrica
-1. marca 2018 v čase od 14:30 do 17:00 sa uskutoční v BB kurz pre učiteľov informatiky. Viac info [na tomto linku](http://micropython.sk/microbit/microbit-bb.pdf).
+Vo štvrtok 1. marca 2018 v čase od 14:30 do 17:00 sa uskutoční v BB kurz pre učiteľov informatiky. Viac info [na tomto linku](http://micropython.sk/microbit/microbit-bb.pdf).
 
 ## Čo je to micro:bit?
 Malá edukačná doska vhoná pre využitie vrámci hodín informatiky na základných a stredných školách. Je možn programovať ju v MicroPythone, C, JavaScripte a cez Blockly (podobné Scratch).
