@@ -17,7 +17,7 @@ Na workshope začneme jednoduchšími úlohami, ktoré využívajú len vbudovan
 Workshop je bezplatný a vieme Vám na mieste zapožičať počítač.
 Pre účasť na workshope je potrebná [registrácia na tomto odkaze](http://bit.ly/microbit-bb)
 
-## UČíme s Hardvérom
+## Učíme s Hardvérom
 Projekt Učíme s Hardvérom je iniciatívou občianskeho združenia SPy, ktorého cieľom je priniesť zaujímavejšie hodiny informatiky do škôl. Viac info [nájdete na tomto odkaze](http://bit.ly/ucime-s-hardverom)
 
 ## SPy o.z. a PyConSK
