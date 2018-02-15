@@ -18,7 +18,7 @@ Workshop je bezplatný a vieme Vám na mieste zapožičať počítač.
 Pre účasť na workshope je potrebná [registrácia na tomto odkaze](http://bit.ly/microbit-bb)
 
 ## Učíme s Hardvérom
-Projekt Učíme s Hardvérom je iniciatívou občianskeho združenia SPy, ktorého cieľom je priniesť zaujímavejšie hodiny informatiky do škôl. Viac info [nájdete na tomto odkaze](http://bit.ly/ucime-s-hardverom)
+Projekt Učíme s Hardvérom je iniciatívou občianskeho združenia SPy, ktorého cieľom je priniesť zaujímavejšie hodiny informatiky do škôl. Viac info [nájdete na tomto odkaze](http://micropython.sk/microbit/ucime-s-hardverom.pdf)
 
 ## SPy o.z. a PyConSK
 Projekt je zastrešený občianskym združením SPy, ktoré organizuje každoročnú medzinárodnú konferenciu PyCon SK a pravidelné mesačné meetupy v Bratislave. Súčasťou  konferencie je aj sekcia pre učiteľov, EduTrack, so zameraním na vyučovanie programovania v jazyku Python, oboznámenie učiteľov s novými trendmi a možnosťami v oblasti programovania.
