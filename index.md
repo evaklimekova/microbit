@@ -30,4 +30,4 @@ marek.mansell@gmail.com
 
 Tel: 0904 010 424
 
-www.marekmansell.sk
+[www.marekmansell.sk](http://marekmansell.sk)
