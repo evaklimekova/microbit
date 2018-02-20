@@ -17,10 +17,10 @@ Na micro:bit workshope si predstavíme edukačnú dosku BBC Micro:bit, vývojov�
 Na workshope začneme jednoduchšími úlohami, ktoré využívajú len vbudované senzory zariadenia a následne prejdeme k pripájaniu externých súčiastok, vďaka ktorým je možné vytvárať väčšie projekty s presahmi do iných predmetov ako napríklad fyzika, biológia alebo výtvarná výchova. Príkladmi takýchto projektov môže byť automatizovaný kvetináč, vlastná meteostanica či domáci bezpečnostný alarm.
 
 Workshop je bezplatný a vieme Vám na mieste zapožičať počítač.
-Pre účasť na workshope je potrebná [registrácia na tomto odkaze](http://bit.ly/microbit-bb)
+Pre účasť na workshope je potrebná [registrácia na tomto odkaze](http://bit.ly/microbit-bb).
 
 ## Učíme s Hardvérom
-Projekt Učíme s Hardvérom je iniciatívou občianskeho združenia SPy, ktorého cieľom je priniesť zaujímavejšie hodiny informatiky do škôl. Viac info [nájdete na tomto odkaze](http://micropython.sk/microbit/ucime-s-hardverom.pdf)
+Projekt Učíme s Hardvérom je iniciatívou občianskeho združenia SPy, ktorého cieľom je priniesť zaujímavejšie hodiny informatiky do škôl. Viac info [nájdete na tomto odkaze](http://micropython.sk/microbit/ucime-s-hardverom.pdf).
 
 ## SPy o.z. a PyConSK
 Projekt je zastrešený občianskym združením SPy, ktoré organizuje každoročnú medzinárodnú konferenciu PyCon SK a pravidelné mesačné meetupy v Bratislave. Súčasťou  konferencie je aj sekcia pre učiteľov, EduTrack, so zameraním na vyučovanie programovania v jazyku Python, oboznámenie učiteľov s novými trendmi a možnosťami v oblasti programovania.
