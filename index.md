@@ -24,3 +24,8 @@ Projekt Učíme s Hardvérom je iniciatívou občianskeho združenia SPy, ktoré
 
 ## SPy o.z. a PyConSK
 Projekt je zastrešený občianskym združením SPy, ktoré organizuje každoročnú medzinárodnú konferenciu PyCon SK a pravidelné mesačné meetupy v Bratislave. Súčasťou  konferencie je aj sekcia pre učiteľov, EduTrack, so zameraním na vyučovanie programovania v jazyku Python, oboznámenie učiteľov s novými trendmi a možnosťami v oblasti programovania.
+
+## Kontakt
+marek.mansell@gmail.com
+Tel: 0904 010 424
+www.marekmansell.sk
