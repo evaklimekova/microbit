@@ -27,5 +27,7 @@ Projekt je zastrešený občianskym združením SPy, ktoré organizuje každoro�
 
 ## Kontakt
 marek.mansell@gmail.com
+
 Tel: 0904 010 424
+
 www.marekmansell.sk
