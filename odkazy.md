@@ -3,8 +3,22 @@
 ## 1. Úvod
 
 ### Python
+Python je veľmi populárny a všestranný programovací jazyk odporúčaný pre vyučovanie základov programovania. Práve preto postupne nahrádza iné programovacie jazyky na hodinách informatiky. Vo veľkom Python využívajú aj v Google, Dropbox, Európskej organizácii jadrového výskumu CERN, sociálnych sieťach Facebook, Pinterest a Instagram, či pri vyučovaní na prestížnej vysokej škole MIT.
+
+Autorom jazyka Python je Guido van Rossum (prvá verzia je z 1989). V súčasnosti jazyk Python vyvíja a spravuje komunita, zastrešovaná medzinárodnou organizáciou Python Software Foundation (skratka PSF). Samotný jazyk je open-source.
+
+Python je interpretovaný jazyk, a preto sa po dopísaní kódu ho neskompilujeme (ako napríklad C či Pascal) ale spustíme ho v interpreteri. Ten náš kód za chodu číta a prekladá na strojové inštukcie pre procesor. Preto je potrebné, aby sme na spustenie Python kódu mali na počítači nainštalovaný Python interpreter. (ako si vysvetlíme o schvíľu)
+
+Odporúčame používať najnovšiu verziu Python3 (v súčasnosti je to Python3.6). Python2 je staršia verzia Pythonu a už nie je vhodné v nej programovať.
+
+V čom sa Python líši snáď najviac od iných programovacích jazykov je práve komunika. Tá je tvorená profesionálmi, začiatočníkmi, učiteľmi i víkendovými programátormi a tak je veľmi rôznorodá. Po celom svete sa pravidelne organizujú konferencie PyCon (čiže PYthon CONference). Na Slovensku je táto konferencia organizovaná raz ročne občianskym združením SPy (Slovak Python User Group).
 
 ### MicroPython
+MicroPython je upravená verzia Pythonu, ktorá beží aj na menej výkonných zariadeniach. Vďaka tomu vieme v MicroPythone programovať mikroelektroniku a interagovať s okolitým svetom pomocou LED diód, senzorov, bzučiakov, motorčekov, atď. Takéto zariadenia sú zároveň rádovo lacnejšie ako počítače pre klasický Python. Obrovskou výhodou je fakt, že syntax je pre obe verzie jazyka rovnaká, a tak sa učiteľom aj žiakom stačí naučiť iba jeden jazyk.
+
+Tak ako na spustenie Python kódu na počítači potrebuje nainštalovaný interpreter, tak aj pre MicroPython kód musíme na mikroprocesom najprv nainsťalovať MicroPython interpreter. To stačí spraviť raz a následne mu budeme už len posielať naše zdrojové kódy na preklad. Raz za čas sa ale oplatí MicroPython na zariadení preinštalovať na novšiu verziu, aby sme mali vždy čo najviac funkčný interpreter.
+
+MicroPython interpreter vymyslel Damien George v roku 2013 pre vývojovú dosku pyboard (s mikroprocesorom STM32). V súčasnosti existuje viacero verzií MicoPythonu pre rôzne mikroprocesory. My budeme používať verziu pre ESP8266, nakoľko tento mikroprocesor na nachádza na doskách NodeMCU.
 
 ### Čo je to micro:bit?
 Malá edukačná doska vhodná pre využitie vrámci hodín informatiky na základných a stredných školách. Vďaka konektorom (tzv. pinom) je možné ňou programovať hardvér.
@@ -15,22 +29,39 @@ Je možné programovať ho v MicroPythone, C, JavaScripte a cez Blockly (podobn�
 ### Blokové programovanie (Blockly)
 [Online Blockly Editor (SK)](https://makecode.microbit.org/?lang=sk_SK) je online editor pre programovanie micro:bitu cez grafický programovac jazyk. Pri tomto spôsobe programovania nie je potrebná inštalácia softvéru na počítač či administrátorské práva, stač prístup na internet a internetový prehliadač.
 
-- Základné - Hello World, Symbols
-- Vstup - shake, on button
-- Hudba - wedding song on button click
-- Spomenúť Radio, Cykly, Logiku, Premenné a náhodné čísla
+#### Základné
+- Zobraziť reťazec - vypíše text na obrazovke
+- Zobrazi LED - zobrazí obrázok na obrazovke
+#### Vstup
+V tejto časti sa nachádzajú bloky, ktoré spostia kód pri nejakej situácii - napríklad pri stlačení tlačidla, naklonen dosky alebo zatrasení.
+#### Hudba
+Microbit dokáže generovať aj zvuk, a to konkrétne na kolíku 0. Preto k nemu pripojíme jeden káblik mikrofónu (dátový) a druhý (zem) pripojíme k ``GND``. Skúste si spustiť melódio _svadba_. 
+#### Radio
+Micro:bit obsahuje aj vbudovaný komunikačný modul, a teda vedia medzi sebou navzájom komunikovať.
+#### Cykly, Logiku, Premenné, Matematika
+Tak ako v Scratch, aj Blockly obsahuje základné programátorské bloky. Zajímavým môže byť _vybrať náhodne od 0 po n_, ktor generuje náhodné čísla.
 
 ### Online MicroPython Editor
 [Online MicroPython Editor (EN)](http://python.microbit.org/) je ďaľší online editor, no tento krát je urený pre tvorby MicroPython kódu. Ani pri tomto spôsobe programovania nie je potrebná inštalácia softvéru na počítač či administrátorské práva, stač prístup na internet a internetový prehliadač.
 
-- Hello world plus heart (default script)
-- while True
-- import microbit
-- indentácia
-- funkcia, parametre, reťazec
-- sleep, display scroll/show Image
+#### Hello World!
+```python
+from microbit import *
 
-Pri Image poveda o dokumentácii - [Online micro:bit MicroPython dokumentácia (EN)](http://microbit-micropython.readthedocs.io)
+while True:
+    display.scroll('Hello, World!')
+    display.show(Image.HEART)
+    sleep(2000)
+```
+* __from micobit import \*__ - tento príkaz nám v kóde sprístupní všetku funkcionalitu knižnice microbit, vďaka ktorej vieme pristupova k hardérovej funkcionalite micro:bitu.
+* __while True:__ - tento príkaz nám bude donekonečna vykonávať kód, ktorý prislúcha do daného wile cyklu
+* __Indentácia__ . v Pythone (na rozdiel od iných jazykov) sa kód prislúchajúci do bloku neoznačuje zátvorkami, ale pomocou odsadzovania, čiže indentácie. Aby nejaký kód prislúchal pod príkaz _while_, musí byť odsadený aspoň o jeden tabulátor (štyri medzerníky)
+* __display.scroll()__ vypíše daný reťazec na obrazovku
+* __display.show(Image.HEART)__ vykreslí daný obrázok na obrazovku
+* __sleep()__ - funkcia sleep pozastaví micro:bit na zadaný počet milisekúnd
+* __poznámky__ - poznámky sa v Pythone tvoria mriežkou (#)
+
+Ako ale zislíme, aké možné obrázky môžeme vykresliť? Na to nám slúži [online micro:bit MicroPython dokumentácia](http://microbit-micropython.readthedocs.io/en/latest/tutorials/images.html), v ktorej je zoznam všetkých príkazov, ktor je možné použiť.
 
 ### Mu Editor
 [Mu (čoskoro v SK)](https://codewith.mu/) je IDE pre písanie MicroPython kódu pre micro:bit, ako aj pre Python3 (skvelá alternatíva k IDLE). Je možné ho stiahnu a spustiť bez inštalácie, alebo inštalovať pomocou nástroja ``pip``. Pre plnú funkcionalitu je potrebné pri platforme Windows stiahnúť si driver pre micro:bit.
@@ -51,9 +82,15 @@ Pri Image poveda o dokumentácii - [Online micro:bit MicroPython dokumentácia (
 
 ### Robot Showcase
 
+### To mention:
+* Relay, Humidity sensors, PIR sensors, Rain sensor
+* Robotics
+* 
+
 
 
 ### Odkazy a inšpirácia
+* [Online micro:bit MicroPython dokumentácia (EN)](http://microbit-micropython.readthedocs.io)
 * [Štatistika z Veľkej Británie (EN)](http://microbit.org/en/2017-07-07-bbc-stats/)
 * [microbit.org/ideas/projects (EN)](http://microbit.org/ideas/projects/)
 * [microbit.hackster.io (EN)](https://microbit.hackster.io/)
