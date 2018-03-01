@@ -293,6 +293,19 @@ while True:
         display.show(Image.SAD)
         music.play(music.JUMP_DOWN)
 ```
+
+### Wireless Sniffer
+```python
+import radio
+from microbit import *
+
+radio.on()
+
+while True:
+    incoming = radio.receive()
+    if incoming:
+        print(incoming)
+```
 ### Robot buggy
 
 ### To mention:
