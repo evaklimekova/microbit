@@ -18,7 +18,7 @@ MicroPython je upravená verzia Pythonu, ktorá beží aj na menej výkonných z
 
 Tak ako na spustenie Python kódu na počítači potrebuje nainštalovaný interpreter, tak aj pre MicroPython kód musíme na mikroprocesom najprv nainsťalovať MicroPython interpreter. To stačí spraviť raz a následne mu budeme už len posielať naše zdrojové kódy na preklad. Raz za čas sa ale oplatí MicroPython na zariadení preinštalovať na novšiu verziu, aby sme mali vždy čo najviac funkčný interpreter.
 
-MicroPython interpreter vymyslel Damien George v roku 2013 pre vývojovú dosku pyboard (s mikroprocesorom STM32). V súčasnosti existuje viacero verzií MicoPythonu pre rôzne mikroprocesory. My budeme používať verziu pre ESP8266, nakoľko tento mikroprocesor na nachádza na doskách NodeMCU.
+MicroPython interpreter vymyslel Damien George v roku 2013 pre vývojovú dosku pyboard (s mikroprocesorom STM32). V súčasnosti existuje viacero verzií MicoPythonu pre rôzne mikroprocesory. My budeme používať verziu pre micro:bit.
 
 ### Čo je to micro:bit?
 Malá edukačná doska vhodná pre využitie vrámci hodín informatiky na základných a stredných školách. Vďaka konektorom (tzv. pinom) je možné ňou programovať hardvér.
@@ -30,8 +30,9 @@ Je možné programovať ho v MicroPythone, C, JavaScripte a cez Blockly (podobn�
 [Online Blockly Editor (SK)](https://makecode.microbit.org/?lang=sk_SK) je online editor pre programovanie micro:bitu cez grafický programovac jazyk. Pri tomto spôsobe programovania nie je potrebná inštalácia softvéru na počítač či administrátorské práva, stač prístup na internet a internetový prehliadač.
 
 #### Základné
-- Zobraziť reťazec - vypíše text na obrazovke
-- Zobrazi LED - zobrazí obrázok na obrazovke
+Zobraziť reťazec - vypíše text na obrazovke
+
+Zobrazi LED - zobrazí obrázok na obrazovke
 #### Vstup
 V tejto časti sa nachádzajú bloky, ktoré spostia kód pri nejakej situácii - napríklad pri stlačení tlačidla, naklonen dosky alebo zatrasení.
 #### Hudba
@@ -66,7 +67,38 @@ Ako ale zislíme, aké možné obrázky môžeme vykresliť? Na to nám slúži 
 ### Mu Editor
 [Mu (čoskoro v SK)](https://codewith.mu/) je IDE pre písanie MicroPython kódu pre micro:bit, ako aj pre Python3 (skvelá alternatíva k IDLE). Je možné ho stiahnu a spustiť bez inštalácie, alebo inštalovať pomocou nástroja ``pip``. Pre plnú funkcionalitu je potrebné pri platforme Windows stiahnúť si driver pre micro:bit.
 
-### Zvuk - Speech
+### Zvuk (Music & Speech)
+#### Pregprogramovaná hudba
+
+```python
+import music
+
+music.play(music.NYAN)
+```
+
+* __music__ - kinižnica na generovanie hudby na _pine 0_
+* __music.NYAN__ - micro:bit už má niekoľko predprogramovaných melódií, tie nájdete v dokumnetácii (sekcia Music)
+
+#### Vlastná hudba
+```python
+import music
+
+tune = ["C4:4", "D", "E", "C", "C", "D", "E", "C", "E", "F", "G:8",
+        "E:4", "F", "G:8"]
+music.play(tune)
+```
+* __C4:4__ - nota C zo štvrtej oktávy s dĺžkou 4
+
+#### Zvukové efekty
+```python
+import music
+
+while True:
+    for freq in range(880, 1760, 16):
+        music.pitch(freq, 6)
+    for freq in range(1760, 880, -16):
+        music.pitch(freq, 6)
+```
 
 ### NeoPixel
 
