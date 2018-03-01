@@ -215,17 +215,85 @@ while True:
     np.show()
 ```
 
-### Cap button
+### Vstup na kolíky
+```python
+from microbit import *
 
-### Banana Cap Button
+while True:
+    if pin2.read_digital():
+        display.show(Image.HAPPY)
+    else:
+        display.show(Image.SAD)
+```
 
-### Banana Piano Keyboard
+Teraz zameň ``read_digital`` za ``is_touched``.
+Namiesto kábliku použi na prepojenie kúsky alobalu a ruky.
+Vyskúšaj to aj cez Banán, Jablko či pomaranč.
 
-### Speed game
+### Banánové piano
+```python
+from microbit import *
+import music
 
-### Wireless Alarm
+tune = ["C4:4", "D", "E", "C", "C", "D", "E", "C", "E", "F", "G:8",
+        "E:4", "F", "G:8"]
+i = 0
 
-### Robot Showcase
+while True:
+    if pin2.read_digital():
+        music.play(tune[i])
+        i += 1
+        if i == len(tune):
+            i = 0
+```
+Toto naše piano vieme rozšíriť ešte aj o svetlo - pri každom stlačení klávesu náhodne zmeníme všetky farby na LED pásiku.
+
+### Hra na reflexy
+TBA
+
+### Diaľkový vypínač
+```python
+import radio
+from microbit import *
+
+radio.on()
+
+while True:
+    if button_a.was_pressed():
+        radio.send('on')
+    elif button_b.was_pressed():
+        radio.send('off')
+```
+```python
+import radio
+from microbit import *
+
+radio.on()
+
+while True:
+    incoming = radio.receive()
+    if incoming == 'on':
+        display.show(Image.HAPPY)
+    elif incoming == 'off':
+        display.show(Image.SAD)
+```
+```python
+import radio
+from microbit import *
+import music
+
+radio.on()
+
+while True:
+    incoming = radio.receive()
+    if incoming == 'on':
+        display.show(Image.HAPPY)
+        music.play(music.JUMP_UP)
+    elif incoming == 'off':
+        display.show(Image.SAD)
+        music.play(music.JUMP_DOWN)
+```
+### Robot buggy
 
 ### To mention:
 * Relay, Humidity sensors, PIR sensors, Rain sensor
