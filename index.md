@@ -1,5 +1,7 @@
 # Micro:bit
 
+[Workshopový materiál](odkazy)
+
 ## Workshop Banská Bystrica
 Vo štvrtok 1. marca 2018 v čase od 14:30 do 17:00 sa uskutoční v BB kurz pre učiteľov informatiky. Viac info [na tomto linku](http://micropython.sk/microbit/microbit-bb.pdf).
 
