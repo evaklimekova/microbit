@@ -240,7 +240,7 @@ tune = ["C4:4", "D", "E", "C", "C", "D", "E", "C", "E", "F", "G:8",
 i = 0
 
 while True:
-    if pin2.read_digital():
+    if pin2.is_touched():
         music.play(tune[i])
         i += 1
         if i == len(tune):
