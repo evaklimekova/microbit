@@ -324,9 +324,9 @@ while True:
 * [micro:bit projekty na itpro.co.uk (EN)](http://www.itpro.co.uk/desktop-hardware/26289/13-top-bbc-micro-bit-projects)
 
 ## Kde kúpiť micro:bit
-* [rlx.sk (SK)]()
-* [Kitronics (EN)]()
-* [Piromoni (EN)]()
+* [rlx.sk (SK)](https://rlx.sk/sk/accessories-ipod/5676-microbit-board-sf-dev-14208-bbc-microbit-af-3530-640522711048.html)
+* [Kitronics (EN)](https://www.kitronik.co.uk/5615-bbc-microbit-starter-kit.html)
+* [Piromoni (EN)](https://shop.pimoroni.com/products/microbit)
 * [Farnell/Element14 (EN)]()
 
 
