@@ -230,6 +230,8 @@ Teraz zameň ``read_digital`` za ``is_touched``.
 Namiesto kábliku použi na prepojenie kúsky alobalu a ruky.
 Vyskúšaj to aj cez Banán, Jablko či pomaranč.
 
+![Micro:bit pinout](http://microbit-micropython.readthedocs.io/en/latest/_images/pinout.png)
+
 ### Banánové piano
 ```python
 from microbit import *
