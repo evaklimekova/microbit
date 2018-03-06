@@ -23,27 +23,27 @@ MicroPython interpreter vymyslel Damien George v roku 2013 pre vývojovú dosku 
 ### Čo je to micro:bit?
 Malá edukačná doska vhodná pre využitie vrámci hodín informatiky na základných a stredných školách. Vďaka konektorom (tzv. pinom) je možné ňou programovať hardvér.
 
-### Ako môžem micro:bit progtamovať?
+### Ako môžem micro:bit programovať?
 Je možné programovať ho v MicroPythone, C, JavaScripte a cez Blockly (podobné Scratch). 
 
 ### Blokové programovanie (Blockly)
-[Online Blockly Editor (SK)](https://makecode.microbit.org/?lang=sk_SK) je online editor pre programovanie micro:bitu cez grafický programovac jazyk. Pri tomto spôsobe programovania nie je potrebná inštalácia softvéru na počítač či administrátorské práva, stač prístup na internet a internetový prehliadač.
+[Online Blockly Editor (SK)](https://makecode.microbit.org/?lang=sk_SK) je online editor pre programovanie micro:bitu cez grafický programovací jazyk. Pri tomto spôsobe programovania nie je potrebná inštalácia softvéru na počítač či administrátorské práva, stačí prístup na internet a internetový prehliadač.
 
 #### Základné
 Zobraziť reťazec - vypíše text na obrazovke
 
-Zobrazi LED - zobrazí obrázok na obrazovke
+Zobraziť LED - zobrazí obrázok na obrazovke
 #### Vstup
-V tejto časti sa nachádzajú bloky, ktoré spostia kód pri nejakej situácii - napríklad pri stlačení tlačidla, naklonen dosky alebo zatrasení.
+V tejto časti sa nachádzajú bloky, ktoré spustia kód pri nejakej udalosti - napríklad pri stlačení tlačidla, naklonení dosky alebo zatrasení.
 #### Hudba
 Microbit dokáže generovať aj zvuk, a to konkrétne na kolíku 0. Preto k nemu pripojíme jeden káblik mikrofónu (dátový) a druhý (zem) pripojíme k ``GND``. Skúste si spustiť melódio _svadba_. 
 #### Radio
 Micro:bit obsahuje aj vbudovaný komunikačný modul, a teda vedia medzi sebou navzájom komunikovať.
 #### Cykly, Logiku, Premenné, Matematika
-Tak ako v Scratch, aj Blockly obsahuje základné programátorské bloky. Zajímavým môže byť _vybrať náhodne od 0 po n_, ktor generuje náhodné čísla.
+Tak ako v Scratch, aj Blockly obsahuje základné príkazy a konštrukcie. Zaujímavým môže byť _vybrať náhodne od 0 po n_, ktorý generuje náhodné čísla.
 
 ### Online MicroPython Editor
-[Online MicroPython Editor (EN)](http://python.microbit.org/) je ďaľší online editor, no tento krát je urený pre tvorby MicroPython kódu. Ani pri tomto spôsobe programovania nie je potrebná inštalácia softvéru na počítač či administrátorské práva, stač prístup na internet a internetový prehliadač.
+[Online MicroPython Editor (EN)](http://python.microbit.org/) je ďaľší online editor, no tento krát je určený pre tvorby MicroPython kódu. Ani pri tomto spôsobe programovania nie je potrebná inštalácia softvéru na počítač či administrátorské práva, stačí prístup na internet a internetový prehliadač.
 
 #### Hello World!
 ```python
@@ -54,7 +54,7 @@ while True:
     display.show(Image.HEART)
     sleep(2000)
 ```
-* __from micobit import \*__ - tento príkaz nám v kóde sprístupní všetku funkcionalitu knižnice microbit, vďaka ktorej vieme pristupova k hardérovej funkcionalite micro:bitu.
+* __from micobit import \*__ - tento príkaz nám v kóde sprístupní všetku funkcionalitu knižnice microbit, vďaka ktorej vieme pristupovať k hardérovej funkcionalite micro:bitu.
 * __while True:__ - tento príkaz nám bude donekonečna vykonávať kód, ktorý prislúcha do daného wile cyklu
 * __Indentácia__ . v Pythone (na rozdiel od iných jazykov) sa kód prislúchajúci do bloku neoznačuje zátvorkami, ale pomocou odsadzovania, čiže indentácie. Aby nejaký kód prislúchal pod príkaz _while_, musí byť odsadený aspoň o jeden tabulátor (štyri medzerníky)
 * __display.scroll()__ vypíše daný reťazec na obrazovku
@@ -62,10 +62,10 @@ while True:
 * __sleep()__ - funkcia sleep pozastaví micro:bit na zadaný počet milisekúnd
 * __poznámky__ - poznámky sa v Pythone tvoria mriežkou (#)
 
-Ako ale zislíme, aké možné obrázky môžeme vykresliť? Na to nám slúži [online micro:bit MicroPython dokumentácia](http://microbit-micropython.readthedocs.io/en/latest/tutorials/images.html), v ktorej je zoznam všetkých príkazov, ktor je možné použiť.
+Ako ale zistíme, aké možné obrázky môžeme vykresliť? Na to nám slúži [online micro:bit MicroPython dokumentácia](http://microbit-micropython.readthedocs.io/en/latest/tutorials/images.html), v ktorej je zoznam všetkých príkazov, ktor? je možné použiť.
 
 ### Mu Editor
-[Mu (čoskoro v SK)](https://codewith.mu/) je IDE pre písanie MicroPython kódu pre micro:bit, ako aj pre Python3 (skvelá alternatíva k IDLE). Je možné ho stiahnu a spustiť bez inštalácie, alebo inštalovať pomocou nástroja ``pip``. Pre plnú funkcionalitu je potrebné pri platforme Windows stiahnúť si driver pre micro:bit.
+[Mu (čoskoro v SK)](https://codewith.mu/) je IDE pre písanie MicroPython kódu pre micro:bit, ako aj pre Python3 (skvelá alternatíva k IDLE). Je možné ho stiahnuť a spustiť bez inštalácie, alebo inštalovať pomocou nástroja ``pip``. Pre plnú funkcionalitu je potrebné pri platforme Windows stiahnúť si driver pre micro:bit.
 
 ### Zvuk (Music & Speech)
 #### Pregprogramovaná hudba
